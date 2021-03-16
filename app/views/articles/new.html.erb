@@ -1,0 +1,15 @@
+<div class="new"></div>
+  <div class="header">
+    <h3>Wikinimous</h3>
+    <%= link_to "Create a new article", "new" %>
+  </div>
+  <div class="form">
+    <%= form_for(@article) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :content %>
+      <%= f.text_field :content, as: :text, input_html: { rows: "2" } %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

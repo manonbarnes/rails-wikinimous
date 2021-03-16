@@ -1,0 +1,18 @@
+<div class="header">
+  <h3>Wikinimous</h3>
+  <%= link_to "Create a new article", "new" %>
+</div>
+<div class="container">
+  <div class="content">
+  <h1> <%= @article.title %> </h1>
+  <p> <%= @article.content %> </p>
+</div>
+  <div class="icons">
+  <%= link_to ('<i class="far fa-edit"></i>').html_safe, "/articles/#{@article.id}/edit"  %>
+
+  <%= link_to article_path(@article.id), method: :delete, data: { confirm: "Delete #{@article.title}?" } do %>
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+      <% end %>
+   </li>
+  </div>
+</div>

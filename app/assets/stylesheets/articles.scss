@@ -1,0 +1,78 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.header {
+  width: auto;
+  height: 100px;
+  background-image: linear-gradient(#c2b595, #fbf6ea);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.header a {
+  color: white;
+  background-color: #63B4D1;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 45px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #457e92;
+}
+
+.header h3 {
+  color: #63B4D1;
+  margin-top: 10px;
+  font-style: italic;
+  padding: 10px;
+}
+
+body {
+  background-color:#fffefd;
+  font-family: 'Arvo', serif;
+}
+
+.paired {
+  background-color: #fcf9f0;
+  margin: 20px;
+  padding:10px;
+  border-radius:5px;
+}
+
+.paired:hover {
+  background-color: #e2ddd3;
+}
+
+.icons {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #63B4D1;
+}
+
+.icons.fa {
+  margin: 20px
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.form {
+  padding: 40px;
+  text-align: center;
+  margin: 300px;
+}
+
+.new {
+  background-color: #e2ddd3;
+}
+
+
